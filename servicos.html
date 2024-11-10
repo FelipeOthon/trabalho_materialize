@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços - Minha Página</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="blue darken-2">
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo">Minha Página</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Parallax Banner -->
+  <div class="parallax-container">
+    <div class="parallax"><img src="assets/images/servicos-banner.jpg" alt="Banner de Serviços"></div>
+  </div>
+
+  <!-- Tabs for Service Categories -->
+  <div class="container section">
+    <h4 class="center-align">Nossos Serviços</h4>
+    <div class="row">
+      <div class="col s12">
+        <ul class="tabs">
+          <li class="tab col s4"><a href="#tab1" class="active">Web Design</a></li>
+          <li class="tab col s4"><a href="#tab2">Desenvolvimento</a></li>
+          <li class="tab col s4"><a href="#tab3">Consultoria</a></li>
+        </ul>
+      </div>
+      <div id="tab1" class="col s12">
+        <div class="card-panel">
+          <h5>Web Design</h5>
+          <p>Oferecemos designs responsivos e modernos para destacar sua marca online.</p>
+          <a class="btn blue darken-2 waves-effect waves-light" href="#modal-webdesign">Mais Informações</a>
+        </div>
+      </div>
+      <div id="tab2" class="col s12">
+        <div class="card-panel">
+          <h5>Desenvolvimento</h5>
+          <p>Implementamos soluções web completas e personalizadas, focadas na performance.</p>
+          <a class="btn blue darken-2 waves-effect waves-light" href="#modal-dev">Mais Informações</a>
+        </div>
+      </div>
+      <div id="tab3" class="col s12">
+        <div class="card-panel">
+          <h5>Consultoria</h5>
+          <p>Ajudamos na transformação digital do seu negócio, com consultoria especializada.</p>
+          <a class="btn blue darken-2 waves-effect waves-light" href="#modal-consultoria">Mais Informações</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tooltips and Service Cards -->
+  <div class="container section">
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://via.placeholder.com/300x200" alt="Serviço A">
+            <span class="card-title">Serviço A</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-tooltip="Contratar Serviço A">
+              <i class="material-icons">help</i>
+            </a>
+          </div>
+          <div class="card-content">
+            <p>Descrição do Serviço A.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://via.placeholder.com/300x200" alt="Serviço B">
+            <span class="card-title">Serviço B</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-tooltip="Contratar Serviço B">
+              <i class="material-icons">add</i>
+            </a>
+          </div>
+          <div class="card-content">
+            <p>Descrição do Serviço B.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://via.placeholder.com/300x200" alt="Serviço C">
+            <span class="card-title">Serviço C</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-tooltip="Contratar Serviço C">
+              <i class="material-icons">add</i>
+            </a>
+          </div>
+          <div class="card-content">
+            <p>Descrição do Serviço C.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Structures -->
+  <div id="modal-webdesign" class="modal">
+    <div class="modal-content">
+      <h4>Detalhes de Web Design</h4>
+      <p>Informações detalhadas sobre o serviço de Web Design.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+    </div>
+  </div>
+
+  <div id="modal-dev" class="modal">
+    <div class="modal-content">
+      <h4>Detalhes de Desenvolvimento</h4>
+      <p>Informações detalhadas sobre o serviço de Desenvolvimento.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+    </div>
+  </div>
+
+  <div id="modal-consultoria" class="modal">
+    <div class="modal-content">
+      <h4>Detalhes de Consultoria</h4>
+      <p>Informações detalhadas sobre o serviço de Consultoria.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer blue darken-3">
+    <div class="container">
+      © 2024 Minha Página
+    </div>
+  </footer>
+
+  <!-- Materialize JS and Initialization -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elemsParallax = document.querySelectorAll('.parallax');
+      M.Parallax.init(elemsParallax);
+      
+      var elemsModal = document.querySelectorAll('.modal');
+      M.Modal.init(elemsModal);
+      
+      var elemsTabs = document.querySelectorAll('.tabs');
+      M.Tabs.init(elemsTabs);
+      
+      var elemsTooltips = document.querySelectorAll('.tooltipped');
+      M.Tooltip.init(elemsTooltips);
+    });
+  </script>
+</body>
+</html>

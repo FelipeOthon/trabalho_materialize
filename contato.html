@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Minha Página</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css"> <!-- Link para seu CSS personalizado -->
+  <style>
+    /* Estilos adicionais para o formulário */
+    .flow-text {
+      margin-bottom: 10px; /* Espaço abaixo do texto */
+    }
+    
+    /* Adicionando espaçamento entre os checkboxes */
+    .checkbox-label {
+      margin-bottom: 10px; /* Espaço entre os checkboxes */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="blue darken-2">
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo">Minha Página</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Form Section -->
+  <div class="container section">
+    <h4 class="center-align">Entre em Contato</h4>
+    <p class="center-align">Preencha o formulário abaixo e entraremos em contato o mais breve possível!</p>
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="nome" type="text" class="validate" required>
+            <label for="nome">Nome</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="email" type="email" class="validate" required>
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="mensagem" class="materialize-textarea" required></textarea>
+            <label for="mensagem">Mensagem</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <p class="flow-text">Como você prefere ser contatado?</p>
+            <label class="checkbox-label">
+              <input type="checkbox" class="filled-in" id="contato-email" />
+              <span>Email</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" class="filled-in" id="contato-telefone" />
+              <span>Telefone</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" class="filled-in" id="contato-mensagem" />
+              <span>Mensagem</span>
+            </label>
+          </div>
+        </div>
+        <button class="btn blue darken-2 waves-effect waves-light" type="submit" name="action">
+          Enviar
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer blue darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Sobre Nós</h5>
+          <p class="grey-text text-lighten-4">Aprimorando interfaces com Materialize CSS.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="index.html">Início</a></li>
+            <li><a class="grey-text text-lighten-3" href="index.html#sobre">Sobre</a></li>
+            <li><a class="grey-text text-lighten-3" href="index.html#servicos">Serviços</a></li>
+            <li><a class="grey-text text-lighten-3" href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2024 Minha Página
+        <a class="grey-text text-lighten-4 right" href="#!">Mais Info</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elemsModal = document.querySelectorAll('.modal');
+      var instancesModal = M.Modal.init(elemsModal);
+    });
+  </script>
+</body>
+</html>
