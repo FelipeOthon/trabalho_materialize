@@ -34,3 +34,14 @@
   max-height: 400px;
   object-fit: cover;
 }
+/* Estilos adicionais para o formulário */
+.flow-text {
+  margin-bottom: 10px; /* Espaço abaixo do texto */
+}
+
+/* Estilo para espaçar os checkboxes */
+.checkbox-label {
+  margin-right: 20px; /* Espaçamento entre os checkboxes */
+  display: inline-flex;
+  align-items: center;
+}

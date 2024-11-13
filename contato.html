@@ -6,18 +6,7 @@
   <title>Contato - Minha Página</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css"> <!-- Link para seu CSS personalizado -->
-  <style>
-    /* Estilos adicionais para o formulário */
-    .flow-text {
-      margin-bottom: 10px; /* Espaço abaixo do texto */
-    }
-    
-    /* Adicionando espaçamento entre os checkboxes */
-    .checkbox-label {
-      margin-bottom: 10px; /* Espaço entre os checkboxes */
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
@@ -50,26 +39,33 @@
           </div>
         </div>
         <div class="row">
-          <div class="input-field col s12">
-            <textarea id="mensagem" class="materialize-textarea" required></textarea>
+          <div class="input-field col s6">
+            <input id="telefone" type="tel" class="validate" required>
+            <label for="telefone">Telefone</label>
+          </div>
+          <div class="input-field col s6">
+            <!-- Caixa de texto para mensagem com tamanho fixo -->
+            <textarea id="mensagem" class="materialize-textarea" style="height: 150px; max-height: 150px; overflow-y: auto;" placeholder="Digite sua mensagem aqui..." required></textarea>
             <label for="mensagem">Mensagem</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <p class="flow-text">Como você prefere ser contatado?</p>
-            <label class="checkbox-label">
-              <input type="checkbox" class="filled-in" id="contato-email" />
-              <span>Email</span>
-            </label>
-            <label class="checkbox-label">
-              <input type="checkbox" class="filled-in" id="contato-telefone" />
-              <span>Telefone</span>
-            </label>
-            <label class="checkbox-label">
-              <input type="checkbox" class="filled-in" id="contato-mensagem" />
-              <span>Mensagem</span>
-            </label>
+            <div class="row">
+              <label class="checkbox-label col s4">
+                <input type="checkbox" class="filled-in" id="contato-email" />
+                <span>Email</span>
+              </label>
+              <label class="checkbox-label col s4">
+                <input type="checkbox" class="filled-in" id="contato-telefone-checkbox" />
+                <span>Telefone</span>
+              </label>
+              <label class="checkbox-label col s4">
+                <input type="checkbox" class="filled-in" id="contato-mensagem" />
+                <span>Mensagem</span>
+              </label>
+            </div>
           </div>
         </div>
         <button class="btn blue darken-2 waves-effect waves-light" type="submit" name="action">
